@@ -330,11 +330,11 @@ img {
         @include display-flex(flex);
     }
     .amado-navbar-brand {
-        @include flex(0 0 70px);
-        max-width: 70px;
+        @include flex(0 0 40px);
+        max-width: 40px;
         a {
             display: block;
-            max-width: 70px;
+            max-width: 40px;
         }
     }
     .amado-navbar-toggler {
@@ -527,6 +527,7 @@ img {
         .logo {
             margin-bottom: 100px;
             display: block;
+            width: 10px;
         }
         .amado-nav {
             li {
