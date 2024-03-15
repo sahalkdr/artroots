@@ -1,23 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var footer = document.createElement('sideheader');
-    footer.innerHTML = `<header class="header-area clearfix">
-    <!-- Close Icon -->
+
+
+    url = window.location.href
+
+    var ele = document.getElementById("sidepanel-header");
+    // var footer = document.createElement('sideheader');
+    let ul = `<ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="product-details.html">Product</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+    </ul>`;
+    if(url.includes("shop.html")) ul =  `<ul>
+    <li ><a href="index.html">Home</a></li>
+    <li class="active"><a href="shop.html">Shop</a></li>
+    <li><a href="product-details.html">Product</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href="checkout.html">Checkout</a></li>
+</ul>`;
+
+    ele.innerHTML = `<!-- Close Icon -->
     <div class="nav-close">
         <i class="fa fa-close" aria-hidden="true"></i>
     </div>
     <!-- Logo -->
     <div class="logo">
-        <a href="index.html"><img src="img/core-img/IMG_4534.JPG" alt=""></a>
+        <a href="index.html"><img src="img/core-img/logo web.png" alt=""></a>
     </div>
     <!-- Amado Nav -->
     <nav class="amado-nav">
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="product-details.html">Product</a></li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="checkout.html">Checkout</a></li>
-        </ul>
+        ${ul}
     </nav>
     <!-- Button Group -->
     <div class="amado-btn-group mt-30 mb-100">
@@ -36,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    </div>
-</header>`;
-    document.body.appendChild(footer);
+    </div>`;
+
+    
 });
