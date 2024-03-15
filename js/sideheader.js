@@ -59,12 +59,12 @@ else if(url.includes("checkout.html")) ul =  `<ul>
         <a href="#" class="btn amado-btn mb-15">%Discount%</a>
         <a href="#" class="btn amado-btn active">New this week</a>
     </div>
-    <!-- Cart Menu -->
+    <!-- Cart Menu 
     <div class="cart-fav-search mb-100">
         <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
         <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
         <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
-    </div>
+    </div>-->
     <!-- Social Button -->
     <div class="social-info d-flex justify-content-between">
         <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
