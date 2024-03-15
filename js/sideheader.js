@@ -19,6 +19,28 @@ document.addEventListener('DOMContentLoaded', function() {
     <li><a href="cart.html">Cart</a></li>
     <li><a href="checkout.html">Checkout</a></li>
 </ul>`;
+else if(url.includes("product-details.html")) ul =  `<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li class="active"><a href="product-details.html">Product</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href="checkout.html">Checkout</a></li>
+</ul>`;
+else if(url.includes("cart.html")) ul =  `<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="product-details.html">Product</a></li>
+    <li class="active"><a href="cart.html">Cart</a></li>
+    <li><a href="checkout.html">Checkout</a></li>
+</ul>`;
+else if(url.includes("checkout.html")) ul =  `<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="product-details.html">Product</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li class="active"><a href="checkout.html">Checkout</a></li>
+</ul>`;
+
 
     ele.innerHTML = `<!-- Close Icon -->
     <div class="nav-close">
